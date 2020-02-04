@@ -89,6 +89,8 @@
 		        
 					<a class="weibo" target="_blank" href="https://www.weibo.com/u/2332259797" title="weibo"><i class="icon-weibo"></i></a>
 		        
+					<a class="mail" target="_blank" href="/ge_zhanling@163.com" title="mail"><i class="icon-mail"></i></a>
+		        
 					<a class="github" target="_blank" href="https://github.com/gezhanling" title="github"><i class="icon-github"></i></a>
 		        
 			</div>
@@ -131,6 +133,8 @@
 						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/d55ba97b98d3" title="jianshu"><i class="icon-jianshu"></i></a>
 			        
 						<a class="weibo" target="_blank" href="https://www.weibo.com/u/2332259797" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="mail" target="_blank" href="/ge_zhanling@163.com" title="mail"><i class="icon-mail"></i></a>
 			        
 						<a class="github" target="_blank" href="https://github.com/gezhanling" title="github"><i class="icon-github"></i></a>
 			        
@@ -176,6 +180,13 @@
   	<time datetime="2020-02-04T05:29:02.535Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-04</time>
 </a>
         
+
+        
+          <span class="archive-article-date">
+              阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -286,15 +297,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/04/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/02/04/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          第一篇博客
+          第二篇博客
         
       </div>
     </a>
   
+  
+    <a href="/2020/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML入门笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -328,6 +344,26 @@
   
 
 
+
+  <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: '0ca0c52241e1bdbfdedc',
+  clientSecret: '5460bbe9809cabdf92447f52b896dd1e538e3e86',
+  repo: 'https://www.gezhanling.work',
+  owner: 'gezhanling',
+  admin: ['gezhanling'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: 'true'
+})
+
+gitalk.render('gitalk-container')
+</script>
+
           </div>
         </div>
       </div>
@@ -338,13 +374,21 @@
 	    		&copy; 2020 葛占岭
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+			<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      		<span id="busuanzi_container_site_pv">
+                本站总访问量：<span id="busuanzi_value_site_pv"></span>次
+            </span>
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_container_site_uv">
+                本站访客数：<span id="busuanzi_value_site_uv"></span>人
+			</span>      
+		</div>
     </div>
   </div>
 </footer>
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -418,6 +462,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
