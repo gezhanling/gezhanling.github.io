@@ -6,23 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://www.gezhanling.work">
-  <title>怎么样解决tekla螺栓的方向问题 | 葛占岭</title>
+  <title>梁的对齐方式在节点内外有差异 | 葛占岭</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="主要解决螺栓无法正确画出的问题.">
+  <meta name="description" content="怎么解决梁的对齐方式在节点内外有差异tekla16版本使用tekla16做的智能节点, 在tekla16中对节点内外的主次构件有严格的对齐一致性要求; tekla2017i及以上版本但是在高版本的tekla中(如tekla2018), 没有那么高的一致性要求, 可以智能的对节点内外进行适应;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="怎么样解决tekla螺栓的方向问题">
-<meta property="og:url" content="https://www.gezhanling.work/2020/03/04/%E8%9E%BA%E6%A0%93%E7%9A%84%E6%96%B9%E5%90%91%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="梁的对齐方式在节点内外有差异">
+<meta property="og:url" content="https://www.gezhanling.work/2021/01/08/%E6%A2%81%E7%9A%84%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F%E5%9C%A8%E8%8A%82%E7%82%B9%E5%86%85%E5%A4%96%E6%9C%89%E5%B7%AE%E5%BC%82/index.html">
 <meta property="og:site_name" content="葛占岭">
-<meta property="og:description" content="主要解决螺栓无法正确画出的问题.">
+<meta property="og:description" content="怎么解决梁的对齐方式在节点内外有差异tekla16版本使用tekla16做的智能节点, 在tekla16中对节点内外的主次构件有严格的对齐一致性要求; tekla2017i及以上版本但是在高版本的tekla中(如tekla2018), 没有那么高的一致性要求, 可以智能的对节点内外进行适应;">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://i.loli.net/2020/03/04/OTWXBx6fQnl7wHA.png">
-<meta property="og:image" content="https://i.loli.net/2020/03/04/ikuvTexfXrMIoSs.png">
-<meta property="article:published_time" content="2020-03-04T02:05:17.999Z">
-<meta property="article:modified_time" content="2020-03-04T03:08:26.595Z">
+<meta property="article:published_time" content="2021-01-08T14:31:22.789Z">
+<meta property="article:modified_time" content="2020-03-04T01:49:22.400Z">
 <meta property="article:author" content="葛占岭">
-<meta property="article:tag" content="tekla">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2020/03/04/OTWXBx6fQnl7wHA.png">
   
     <link rel="alternative" href="/atom.xml" title="葛占岭" type="application/atom+xml">
   
@@ -162,7 +158,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-螺栓的方向问题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-梁的对齐方式在节点内外有差异" class="article article-type-post " itemscope itemprop="blogPost">
   
   <div class="article-inner">
     
@@ -170,13 +166,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      怎么样解决tekla螺栓的方向问题
+      梁的对齐方式在节点内外有差异
     </h1>
   
 
         
-        <a href="/2020/03/04/%E8%9E%BA%E6%A0%93%E7%9A%84%E6%96%B9%E5%90%91%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-03-04T02:05:17.999Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-04</time>
+        <a href="/2021/01/08/%E6%A2%81%E7%9A%84%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F%E5%9C%A8%E8%8A%82%E7%82%B9%E5%86%85%E5%A4%96%E6%9C%89%E5%B7%AE%E5%BC%82/" class="archive-article-date">
+  	<time datetime="2021-01-08T14:31:22.789Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-08</time>
 </a>
         
 
@@ -190,22 +186,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>主要解决螺栓无法正确画出的问题.</p>
-<a id="more"></a>
-
-<ol>
-<li>问题解释: tekla中的螺栓组构件是有两个角点来控制的, 角点的放置放置方式直接影响螺栓的方向;</li>
-<li>对于正交的情况, 放置方式影响不大; <ol>
-<li>图1: <img src="https://i.loli.net/2020/03/04/OTWXBx6fQnl7wHA.png" alt="图1.png"></li>
-<li>图1中的路线1和路线2都可以; </li>
-</ol>
-</li>
-<li>但是对于非正交的情况下, 放置的方式有很大影响,就图2一样:<ol>
-<li>图2: <img src="https://i.loli.net/2020/03/04/ikuvTexfXrMIoSs.png" alt="图2.png"></li>
-<li>图2中只有在图1中的路线1可以使用, 才能正确的将螺栓画出;</li>
-</ol>
-</li>
-</ol>
+        <h2 id="怎么解决梁的对齐方式在节点内外有差异"><a href="#怎么解决梁的对齐方式在节点内外有差异" class="headerlink" title="怎么解决梁的对齐方式在节点内外有差异"></a>怎么解决梁的对齐方式在节点内外有差异</h2><h2 id="tekla16版本"><a href="#tekla16版本" class="headerlink" title="tekla16版本"></a>tekla16版本</h2><p>使用tekla16做的智能节点, 在tekla16中对节点内外的主次构件有严格的对齐一致性要求;</p>
+<h2 id="tekla2017i及以上版本"><a href="#tekla2017i及以上版本" class="headerlink" title="tekla2017i及以上版本"></a>tekla2017i及以上版本</h2><p>但是在高版本的tekla中(如tekla2018), 没有那么高的一致性要求, 可以智能的对节点内外进行适应;</p>
 
       
 
@@ -245,17 +227,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tekla</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -306,7 +277,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://www.gezhanling.work/2020/03/04/%E8%9E%BA%E6%A0%93%E7%9A%84%E6%96%B9%E5%90%91%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.gezhanling.work/2021/01/08/%E6%A2%81%E7%9A%84%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F%E5%9C%A8%E8%8A%82%E7%82%B9%E5%86%85%E5%A4%96%E6%9C%89%E5%B7%AE%E5%BC%82/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -320,18 +291,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/08/%E4%BF%AE%E6%94%B9%E4%BA%86tekla%E4%B8%AD%E6%98%BE%E7%A4%BA%E7%9A%84%E7%B1%BB%E5%88%AB%E4%BD%86%E4%B8%8D%E7%94%9F%E6%95%88%E6%80%8E%E4%B9%88%E5%8A%9E/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          怎么样解决tekla中无法更新修改后的显示类别的问题
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/06/%E6%80%8E%E4%B9%88%E5%9C%A8sciter%E7%95%8C%E9%9D%A2%E7%9A%84%E5%AD%97%E6%AE%B5%E4%B8%AD%E5%A2%9E%E5%8A%A0%E6%8D%A2%E8%A1%8C%E7%AC%A6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">怎么在sciter界面的字段中增加换行符</div>
+    <a href="/2020/03/08/%E4%BF%AE%E6%94%B9%E4%BA%86tekla%E4%B8%AD%E6%98%BE%E7%A4%BA%E7%9A%84%E7%B1%BB%E5%88%AB%E4%BD%86%E4%B8%8D%E7%94%9F%E6%95%88%E6%80%8E%E4%B9%88%E5%8A%9E/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">怎么样解决tekla中无法更新修改后的显示类别的问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
