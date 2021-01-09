@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://www.gezhanling.work">
-  <title>怎么解决节点内部材质改变导致外部无法画出 | 葛占岭</title>
+  <title>C++怎么使用const | 葛占岭</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="主要解决节点内部材质改变导致外部无法画出.">
+  <meta name="description" content="const的用法总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="怎么解决节点内部材质改变导致外部无法画出">
-<meta property="og:url" content="https://www.gezhanling.work/2021/01/08/%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E8%8A%82%E7%82%B9%E5%86%85%E9%83%A8%E6%9D%90%E8%B4%A8%E6%94%B9%E5%8F%98%E5%AF%BC%E8%87%B4%E5%A4%96%E9%83%A8%E6%97%A0%E6%B3%95%E7%94%BB%E5%87%BA/index.html">
+<meta property="og:title" content="C++怎么使用const">
+<meta property="og:url" content="https://www.gezhanling.work/2021/01/09/C++%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8const/index.html">
 <meta property="og:site_name" content="葛占岭">
-<meta property="og:description" content="主要解决节点内部材质改变导致外部无法画出.">
+<meta property="og:description" content="const的用法总结">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-08T14:41:12.196Z">
-<meta property="article:modified_time" content="2021-01-08T14:40:54.518Z">
+<meta property="article:published_time" content="2021-01-09T15:03:44.858Z">
+<meta property="article:modified_time" content="2021-01-09T15:18:50.548Z">
 <meta property="article:author" content="葛占岭">
-<meta property="article:tag" content="tekla">
+<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="葛占岭" type="application/atom+xml">
@@ -159,7 +159,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-怎么解决节点内部材质改变导致外部无法画出" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C++怎么使用const" class="article article-type-post " itemscope itemprop="blogPost">
   
   <div class="article-inner">
     
@@ -167,13 +167,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      怎么解决节点内部材质改变导致外部无法画出
+      C++怎么使用const
     </h1>
   
 
         
-        <a href="/2021/01/08/%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E8%8A%82%E7%82%B9%E5%86%85%E9%83%A8%E6%9D%90%E8%B4%A8%E6%94%B9%E5%8F%98%E5%AF%BC%E8%87%B4%E5%A4%96%E9%83%A8%E6%97%A0%E6%B3%95%E7%94%BB%E5%87%BA/" class="archive-article-date">
-  	<time datetime="2021-01-08T14:41:12.196Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-08</time>
+        <a href="/2021/01/09/C++%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8const/" class="archive-article-date">
+  	<time datetime="2021-01-09T15:03:44.858Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-09</time>
 </a>
         
 
@@ -187,11 +187,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>主要解决节点内部材质改变导致外部无法画出.</p>
+        <p>const的用法总结</p>
 <a id="more"></a>
-
-<p>具体的解决方法1. 是将材质这个参数暴露在外边, 要用户进行输入控制</p>
-<p>具体的解决方法2. 在”材质”这个参数中使用=引号的方式改变材质. 例如: 材料 = “Q345B”</p>
+<ol>
+<li>const出现*左边表示变量是常量: gePoint2d const * pShape</li>
+<li>const出现* 右边表示指针是常量: gePoint2d  * const pShape</li>
+<li>const出现在两边表示都是常量: gePoint2d  const * const pShape </li>
+<li>(识别小技巧是const与紧挨着的前面的一个相连的标识变量类型就是常量)</li>
+<li>函数后面加const: “只读”函数, 这个成员函数不改变类的数据成员, 非静态成员函数后面才能加const（加到非成员函数或静态成员后面会产生编译错误）</li>
+<li>函数前面使用const 表示返回值为const</li>
+</ol>
 
       
 
@@ -236,7 +241,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tekla</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
         		</li>
       		
 		</ul>
@@ -292,7 +297,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://www.gezhanling.work/2021/01/08/%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E8%8A%82%E7%82%B9%E5%86%85%E9%83%A8%E6%9D%90%E8%B4%A8%E6%94%B9%E5%8F%98%E5%AF%BC%E8%87%B4%E5%A4%96%E9%83%A8%E6%97%A0%E6%B3%95%E7%94%BB%E5%87%BA/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.gezhanling.work/2021/01/09/C++%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8const/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,18 +311,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/01/09/revit%E4%B8%89%E4%B8%AA%E6%96%B9%E5%90%91%E6%97%8B%E8%BD%AC%E6%97%8F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          对Revit族三个方向旋转
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/08/%E6%A2%81%E7%9A%84%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F%E5%9C%A8%E8%8A%82%E7%82%B9%E5%86%85%E5%A4%96%E6%9C%89%E5%B7%AE%E5%BC%82/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">怎么解决节点内部材质改变导致外部无法画出</div>
+    <a href="/2021/01/09/revit%E4%B8%89%E4%B8%AA%E6%96%B9%E5%90%91%E6%97%8B%E8%BD%AC%E6%97%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">对Revit族三个方向旋转</div>
       <i class="icon-circle-right"></i>
     </a>
   
